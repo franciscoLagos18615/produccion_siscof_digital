@@ -11,6 +11,6 @@ import java.util.List;
 
 @Transactional
 public interface FileRepository extends JpaRepository<File, Long> {
-    @Query(value = "SELECT * FROM FILES WHERE ITEM_ID= ?1 ", nativeQuery = true)
+    @Query(value = "SELECT * FROM files WHERE ITEM_ID= ?1 ", nativeQuery = true)
     List<File> findByItemId(Long itemId);
 }

@@ -7,9 +7,9 @@ import org.springframework.data.jpa.repository.Query;
 
 public interface BudgetRepository extends JpaRepository<Budget, Long> {
 
-    @Query(value = "SELECT * FROM BUDGETS WHERE STATUS= 'activo' ", nativeQuery = true)
+    @Query(value = "SELECT * FROM budgets WHERE STATUS= 'activo' ", nativeQuery = true)
     Iterable<Budget> findAllByActive();
 
-    @Query(value = "SELECT * FROM BUDGETS WHERE STATUS= 'inactivo' ", nativeQuery = true)
+    @Query(value = "SELECT * FROM budgets WHERE STATUS= 'inactivo' ", nativeQuery = true)
     Iterable<Budget> findAllByInactive();
 }
