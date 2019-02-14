@@ -17,6 +17,9 @@ public class SignUpForm {
     @Size(max = 60)
     @Email
     private String email;
+
+    @Size(max = 60)
+    private String email_optional;
     
     private Set<String> role;
     
@@ -62,5 +65,13 @@ public class SignUpForm {
     
     public void setRole(Set<String> role) {
     	this.role = role;
+    }
+
+    public String getEmail_optional() {
+        return email_optional;
+    }
+
+    public void setEmail_optional(String email_optional) {
+        this.email_optional = email_optional;
     }
 }
