@@ -53,7 +53,7 @@ public class User{
     @Size(min=6, max = 100)
     private String password;
 
-    @Size(max=50)
+
     private String email_optional;
 
     @ManyToMany(fetch = FetchType.LAZY)
@@ -111,6 +111,13 @@ public class User{
     public void setPassword(String password) {
         this.password = password;
     }
+    public String getEmail_optional() {
+        return email_optional;
+    }
+
+    public void setEmail_optional(String email_optional) {
+        this.email_optional = email_optional;
+    }
 
     public Set<Role> getRoles() {
         return roles;
@@ -120,11 +127,5 @@ public class User{
         this.roles = roles;
     }
 
-    public String getEmail_optional() {
-        return email_optional;
-    }
 
-    public void setEmail_optional(String email_optional) {
-        this.email_optional = email_optional;
-    }
 }
