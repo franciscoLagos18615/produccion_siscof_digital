@@ -85,9 +85,9 @@ public class Consignment {
         this.name_user = name_user;
     }
 
-    public void addItem(Item item){
-        this.items.add(item);
-    }
+    //public void addItem(Item item){
+      //  this.items.add(item);
+    //}
 
     public String getStatus_bin() {
         return status_bin;

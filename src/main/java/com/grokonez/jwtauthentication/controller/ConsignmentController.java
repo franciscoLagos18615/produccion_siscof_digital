@@ -21,13 +21,16 @@ import java.util.Date;
 import java.util.Optional;
 import java.util.Properties;
 
-@CrossOrigin(origins = "*", maxAge = 3600)
+//@CrossOrigin(origins = "*", maxAge = 3600)
 @RestController
 @RequestMapping(path="/api")
 public class ConsignmentController {
 
     @Autowired
     private ConsignmentRepository consignmentRepository;
+
+    @Autowired
+    private JavaMailSender sender;
 
 
     //metodo que retorna una remesa de acuerdo a su id
@@ -156,15 +159,14 @@ public class ConsignmentController {
                 }).orElseThrow(() -> new NotFoundException("Consignment not found!"));
 
     }
-    @Autowired
-    private JavaMailSender sender;
+
 
     //metodo para aprobar, aprobar parcialmente o rechazar la remesa
 
-    @PutMapping("/consignmentDecision/{id}/{status}")
+    @PutMapping("/consignmentDecision/{id}/{statusDecision}")
     public Consignment updateStatusConsignmentForDecision(@PathVariable Long id,
-                                                     @PathVariable String status,
-                                                     @Valid @RequestBody Consignment consignmentUpdated) throws NotFoundException {
+                                                        @PathVariable String statusDecision,
+                                                      @Valid @RequestBody Consignment consignmentUpdated) throws NotFoundException {
 
         String correo= consignmentRepository.findEmailOfCreateConsignment(id);
         String correo_prueba = "f.lagos18615@gmail.com";
@@ -175,24 +177,20 @@ public class ConsignmentController {
                     //if(consignment.getStatus()=="Realizando"){
                       //  consignment.setStatus(consignment.getStatus());
                     //}
-                    sendMail(correo_prueba, id, status);
+                    sendMail(correo_prueba, id, statusDecision);
+                    String estado = consignmentUpdated.getStatus();
+                    String estado2= consignment.getStatus();
 
-
-                    if(consignment.getStatus()=="Enviada UPF"){
-                        consignment.setStatus(status);
+                    if(estado.compareTo(estado2) == 0){
+                        consignment.setStatus(statusDecision);
+                        //String nuevo = consignment.getStatus();
+                        //System.out.printf("el estado es: ", consignment.getStatus() );
+                        return consignmentRepository.save(consignment);
 
                     }
-                    else {
-                        consignment.setStatus(status);
-                    }
 
-                   // else{
-                     //   if(consignment.getStatus()=="Aprobado" || consignment.getStatus()=="Aprobado Parcialmente" || consignment.getStatus()=="Rechazado" ){
-                       //     consignment.setStatus(consignment.getStatus());
-                            //consignment.setStatus(status);
-                        //}
 
-                    //}
+
 
 
 
