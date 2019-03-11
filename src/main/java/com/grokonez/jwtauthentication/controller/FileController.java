@@ -80,6 +80,22 @@ public class FileController {
         return ResponseEntity.status(404).body(null);
     }
 
+    //method for delete one file for id
+    @DeleteMapping("/item/{itemId}/file/{fileId}")
+    public String deleteAssignment(@PathVariable Long itemId,
+                                   @PathVariable Long fileId) throws NotFoundException {
+
+        if(!itemRepository.existsById(itemId)) {
+            throw new NotFoundException("item not found!");
+        }
+
+        return fileRepository.findById(fileId)
+                .map(file -> {
+                    fileRepository.delete(file);
+                    return "Deleted Successfully!";
+                }).orElseThrow(() -> new NotFoundException("file not found!"));
+    }
+
 
 
 }
