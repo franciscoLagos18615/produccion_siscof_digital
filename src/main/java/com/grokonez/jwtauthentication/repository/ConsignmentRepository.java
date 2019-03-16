@@ -15,9 +15,11 @@ public interface ConsignmentRepository extends JpaRepository<Consignment, Long> 
     @Query(value = "SELECT governance FROM consigments WHERE ID_CONSIGNMENT= ?1 ", nativeQuery = true)
     String findNameConsignment(Long consignmentId);
 
-    @Query(value = "SELECT email FROM consigments, users WHERE CONSIGMENTS.NAME_USER = USERS.USERNAME AND ID_CONSIGNMENT= ?1 ", nativeQuery = true)
+    @Query(value = "SELECT email FROM consigments, users WHERE consigments.NAME_USER = users.USERNAME AND ID_CONSIGNMENT= ?1 ", nativeQuery = true)
     String findEmailOfCreateConsignment(Long consignmentId);
 
+    @Query(value = "SELECT email_optional FROM users WHERE USERNAME=?1 ", nativeQuery = true)
+    String findEmailOptional(String name);
 
 
 }

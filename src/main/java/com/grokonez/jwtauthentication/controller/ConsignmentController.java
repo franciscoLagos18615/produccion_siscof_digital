@@ -168,7 +168,8 @@ public class ConsignmentController {
                                                         @PathVariable String statusDecision,
                                                       @Valid @RequestBody Consignment consignmentUpdated) throws NotFoundException {
 
-        String correo= consignmentRepository.findEmailOfCreateConsignment(id);
+        /**descomentar esta linea, una vez que comienzen a crear los usuarios reales del sistema*/
+        //String correo= consignmentRepository.findEmailOfCreateConsignment(id);
         String correo_prueba = "f.lagos18615@gmail.com";
 
 
