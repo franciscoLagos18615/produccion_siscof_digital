@@ -171,6 +171,9 @@ public class ConsignmentController {
         /**descomentar esta linea, una vez que comienzen a crear los usuarios reales del sistema*/
         //String correo= consignmentRepository.findEmailOfCreateConsignment(id);
         String correo_prueba = "f.lagos18615@gmail.com";
+        String correo_user = consignmentRepository.findEmailOfCreateConsignment(id);
+        String correo_user_optional = consignmentRepository.findEmailOptional(correo_user);
+
 
 
         return consignmentRepository.findById(id)
@@ -178,7 +181,13 @@ public class ConsignmentController {
                     //if(consignment.getStatus()=="Realizando"){
                       //  consignment.setStatus(consignment.getStatus());
                     //}
-                    sendMail(correo_prueba, id, statusDecision);
+                    if(correo_user!=null){
+                        sendMail(correo_user, id, statusDecision);
+                    }
+
+                    if(correo_user_optional!=null){
+                        sendMail(correo_user_optional,id,statusDecision);
+                    }
                     String estado = consignmentUpdated.getStatus();
                     String estado2= consignment.getStatus();
 
