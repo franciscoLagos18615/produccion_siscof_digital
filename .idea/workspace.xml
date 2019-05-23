@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="77b3e580-83c0-452c-a357-e0ed01ed382f" name="Default Changelist" comment="">
+    <list default="true" id="77b3e580-83c0-452c-a357-e0ed01ed382f" name="Default Changelist" comment="fix for production , sweet alert via cdn">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/0.208d14be54d0d5f9e2ed.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/0.5255251295130e833a6c.chunk.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/3rdpartylicenses.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/css/demo.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/UPFLOGO2.png" beforeDir="false" />
@@ -106,121 +108,13 @@
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/material-dashboard.scss" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/favicon.ico" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/inline.7578f04586bfb6323156.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/inline.9e2163f32b90db9d1b12.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/main.edbea92165c1fc589565.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/main.edbea92165c1fc589565.bundle.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/polyfills.efdbcc05494c7cd9f311.bundle.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/scripts.7f0ecc43a1e467fdc594.bundle.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/styles.9810e5c2fc584389ce1c.bundle.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/grokonez/jwtauthentication/controller/ConsignmentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/grokonez/jwtauthentication/controller/ConsignmentController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/grokonez/jwtauthentication/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/grokonez/jwtauthentication/model/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/grokonez/jwtauthentication/repository/ConsignmentRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/grokonez/jwtauthentication/repository/ConsignmentRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/0.5255251295130e833a6c.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/3rdpartylicenses.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/css/demo.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/img/UPFLOGO2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/img/angular2-logo-red.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/img/angular2-logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/img/apple-icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/img/banner.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/img/cover.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/img/faces/marc.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/img/favicon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/img/gears.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/img/logo-UPF.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/img/mask.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/img/new_logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/img/pinoHachado.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/img/presupuesto.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/img/presupuestos2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/img/presupuestos3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/img/remesa.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/img/sidebar-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/img/sidebar-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/img/sidebar-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/img/sidebar-4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/img/tim_80x80.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/scss/core/_alerts.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/scss/core/_buttons.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/scss/core/_cards.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/scss/core/_checkboxes.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/scss/core/_dropdown.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/scss/core/_example-pages.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/scss/core/_fixed-plugin.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/scss/core/_footers.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/scss/core/_forms.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/scss/core/_images.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/scss/core/_input-group.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/scss/core/_misc.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/scss/core/_mixins.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/scss/core/_navbar.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/scss/core/_popover.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/scss/core/_popups.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/scss/core/_radios.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/scss/core/_responsive.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/scss/core/_ripples.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/scss/core/_sidebar-and-main-panel.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/scss/core/_tables.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/scss/core/_tabs.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/scss/core/_togglebutton.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/scss/core/_tooltip.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/scss/core/_type.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/scss/core/_variables.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/scss/core/cards/_card-plain.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/scss/core/cards/_card-profile.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/scss/core/cards/_card-stats.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/scss/core/mixins/_alert.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/scss/core/mixins/_animations.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/scss/core/mixins/_breakpoints.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/scss/core/mixins/_buttons.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/scss/core/mixins/_chartist.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/scss/core/mixins/_colored-shadows.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/scss/core/mixins/_drawer.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/scss/core/mixins/_forms.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/scss/core/mixins/_hover.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/scss/core/mixins/_layout.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/scss/core/mixins/_navbar-colors.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/scss/core/mixins/_navs.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/scss/core/mixins/_sidebar-color.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/scss/core/mixins/_transparency.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/scss/core/mixins/_type.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/scss/core/mixins/_utilities.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/scss/core/mixins/_variables.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/scss/core/mixins/_vendor-prefixes.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/scss/core/plugins/_animate.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/scss/core/plugins/_chartist.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/scss/core/plugins/_perfect-scrollbar.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/scss/core/variables/_body.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/scss/core/variables/_bootstrap-material-design-base.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/scss/core/variables/_bootstrap-material-design.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/scss/core/variables/_brand.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/scss/core/variables/_buttons.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/scss/core/variables/_card.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/scss/core/variables/_code.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/scss/core/variables/_colors-map.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/scss/core/variables/_colors.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/scss/core/variables/_custom-forms.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/scss/core/variables/_drawer.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/scss/core/variables/_dropdown.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/scss/core/variables/_forms.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/scss/core/variables/_layout.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/scss/core/variables/_list-group.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/scss/core/variables/_menu.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/scss/core/variables/_modals.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/scss/core/variables/_nav.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/scss/core/variables/_pagination.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/scss/core/variables/_shadow.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/scss/core/variables/_snackbar.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/scss/core/variables/_spacing.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/scss/core/variables/_state.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/scss/core/variables/_tables.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/scss/core/variables/_tooltip.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/scss/core/variables/_type.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/scss/material-dashboard.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/inline.7578f04586bfb6323156.bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/main.edbea92165c1fc589565.bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/polyfills.efdbcc05494c7cd9f311.bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/scripts.7f0ecc43a1e467fdc594.bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/styles.9810e5c2fc584389ce1c.bundle.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -255,13 +149,13 @@
         <counts>
           <entry key="java" value="490" />
           <entry key="properties" value="50" />
-          <entry key="txt" value="22" />
+          <entry key="txt" value="46" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="490" />
-          <entry key="PLAIN_TEXT" value="22" />
+          <entry key="PLAIN_TEXT" value="46" />
           <entry key="Properties" value="50" />
         </counts>
       </usages-collector>
@@ -292,11 +186,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+            <state relative-caret-position="120">
+              <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -328,7 +222,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/controller/ConsignmentController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="222">
@@ -432,7 +326,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558475462820" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558577959128" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -467,7 +361,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1551407139921</updated>
-      <workItem from="1551407141222" duration="20805000" />
+      <workItem from="1551407141222" duration="22523000" />
     </task>
     <task id="LOCAL-00001" summary="fix for production">
       <created>1551407197535</created>
@@ -497,11 +391,18 @@
       <option name="project" value="LOCAL" />
       <updated>1558466166071</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="fix for production 5">
+      <created>1558475496905</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1558475496905</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20805000" />
+    <option name="totallyTimeSpent" value="22523000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="810" extended-state="0" />
@@ -551,7 +452,8 @@
     <MESSAGE value="fix for production2" />
     <MESSAGE value="fix for production 3" />
     <MESSAGE value="fix for production 4" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix for production 4" />
+    <MESSAGE value="fix for production 5" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix for production 5" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/message/request/SignUpForm.java">
@@ -755,6 +657,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/controller/ConsignmentController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="222">
@@ -762,13 +671,6 @@
           <folding>
             <element signature="method#deleteConsignments#0;class#ConsignmentController#0" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
         </state>
       </provider>
     </entry>
