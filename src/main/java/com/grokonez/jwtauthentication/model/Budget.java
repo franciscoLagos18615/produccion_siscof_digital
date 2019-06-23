@@ -32,6 +32,8 @@ public class Budget {
 
     private String status;
 
+    private Date dateChange;
+
 
     public long getBudget_id() {
         return budget_id;
@@ -79,5 +81,13 @@ public class Budget {
 
     public void setStatus(String status) {
         this.status = status;
+    }
+
+    public Date getDateChange() {
+        return dateChange;
+    }
+
+    public void setDateChange(Date dateChange) {
+        this.dateChange = dateChange;
     }
 }

@@ -7,6 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
+
+import java.util.Date;
 import java.util.Optional;
 
 @CrossOrigin(origins = "*", maxAge = 3600)
@@ -51,6 +53,7 @@ public class BudgetController {
     @RequestMapping(path = "budget/new", method = RequestMethod.POST)
     public Integer CreateUser(@RequestBody Budget budget) {
 
+
         budgetRepository.save(budget);
         return 1;
 
@@ -68,6 +71,7 @@ public class BudgetController {
                     budget.setBudget(budgetUpdated.getBudget());
                     budget.setDate(budgetUpdated.getDate());
                     budget.setObservation(budgetUpdated.getObservation());
+                    budget.setDateChange(budgetUpdated.getDateChange());
 
                     return budgetRepository.save(budget);
                 }).orElseThrow(() -> new NotFoundException("budget not found with id " + id));

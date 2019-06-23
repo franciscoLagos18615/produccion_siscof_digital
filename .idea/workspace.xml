@@ -2,119 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="77b3e580-83c0-452c-a357-e0ed01ed382f" name="Default Changelist" comment="fix for production , sweet alert via cdn">
+      <change afterPath="$PROJECT_DIR$/target/classes/static/main.edbea92165c1fc589565.bundle.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/0.208d14be54d0d5f9e2ed.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/0.5255251295130e833a6c.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/3rdpartylicenses.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/css/demo.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/UPFLOGO2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/angular2-logo-red.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/angular2-logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/apple-icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/banner.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/cover.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/faces/marc.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/favicon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/gears.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/logo-UPF.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/mask.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/new_logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/pinoHachado.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/presupuesto.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/presupuestos2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/presupuestos3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/remesa.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/sidebar-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/sidebar-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/sidebar-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/sidebar-4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/tim_80x80.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/core/_alerts.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/core/_buttons.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/core/_cards.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/core/_checkboxes.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/core/_dropdown.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/core/_example-pages.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/core/_fixed-plugin.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/core/_footers.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/core/_forms.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/core/_images.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/core/_input-group.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/core/_misc.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/core/_mixins.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/core/_navbar.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/core/_popover.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/core/_popups.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/core/_radios.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/core/_responsive.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/core/_ripples.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/core/_sidebar-and-main-panel.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/core/_tables.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/core/_tabs.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/core/_togglebutton.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/core/_tooltip.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/core/_type.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/core/_variables.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/core/cards/_card-plain.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/core/cards/_card-profile.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/core/cards/_card-stats.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/core/mixins/_alert.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/core/mixins/_animations.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/core/mixins/_breakpoints.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/core/mixins/_buttons.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/core/mixins/_chartist.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/core/mixins/_colored-shadows.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/core/mixins/_drawer.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/core/mixins/_forms.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/core/mixins/_hover.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/core/mixins/_layout.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/core/mixins/_navbar-colors.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/core/mixins/_navs.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/core/mixins/_sidebar-color.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/core/mixins/_transparency.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/core/mixins/_type.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/core/mixins/_utilities.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/core/mixins/_variables.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/core/mixins/_vendor-prefixes.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/core/plugins/_animate.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/core/plugins/_chartist.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/core/plugins/_perfect-scrollbar.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/core/variables/_body.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/core/variables/_bootstrap-material-design-base.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/core/variables/_bootstrap-material-design.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/core/variables/_brand.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/core/variables/_buttons.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/core/variables/_card.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/core/variables/_code.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/core/variables/_colors-map.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/core/variables/_colors.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/core/variables/_custom-forms.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/core/variables/_drawer.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/core/variables/_dropdown.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/core/variables/_forms.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/core/variables/_layout.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/core/variables/_list-group.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/core/variables/_menu.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/core/variables/_modals.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/core/variables/_nav.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/core/variables/_pagination.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/core/variables/_shadow.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/core/variables/_snackbar.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/core/variables/_spacing.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/core/variables/_state.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/core/variables/_tables.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/core/variables/_tooltip.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/core/variables/_type.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/material-dashboard.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/inline.7578f04586bfb6323156.bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/inline.9e2163f32b90db9d1b12.bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/main.edbea92165c1fc589565.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/main.edbea92165c1fc589565.bundle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/polyfills.efdbcc05494c7cd9f311.bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/scripts.7f0ecc43a1e467fdc594.bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/styles.9810e5c2fc584389ce1c.bundle.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/controller/AuthRestAPIs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/controller/AuthRestAPIs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/controller/BudgetController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/controller/BudgetController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/controller/ConsignmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/controller/ConsignmentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/model/Budget.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/model/Budget.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/grokonez/jwtauthentication/controller/AuthRestAPIs.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -147,28 +41,28 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="490" />
+          <entry key="java" value="1380" />
           <entry key="properties" value="50" />
           <entry key="txt" value="46" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="490" />
+          <entry key="JAVA" value="1380" />
           <entry key="PLAIN_TEXT" value="46" />
           <entry key="Properties" value="50" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="49" />
+          <entry key="java" value="54" />
           <entry key="properties" value="3" />
           <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="49" />
+          <entry key="JAVA" value="54" />
           <entry key="Properties" value="3" />
           <entry key="XML" value="1" />
         </counts>
@@ -177,15 +71,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/repository/BudgetRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
@@ -213,23 +98,66 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/repository/FileRepository.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/controller/ConsignmentController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+            <state relative-caret-position="167">
+              <caret line="147" column="30" selection-start-line="147" selection-start-column="30" selection-end-line="147" selection-end-column="30" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/controller/ConsignmentController.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/controller/AuthRestAPIs.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="194" column="11" selection-start-line="194" selection-start-column="11" selection-end-line="194" selection-end-column="11" />
+            <state relative-caret-position="218">
+              <caret line="176" column="99" selection-start-line="176" selection-start-column="99" selection-end-line="176" selection-end-column="99" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/controller/BudgetController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="118">
+              <caret line="66" column="84" selection-start-line="66" selection-start-column="84" selection-end-line="66" selection-end-column="84" />
               <folding>
-                <element signature="method#deleteConsignments#0;class#ConsignmentController#0" />
+                <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/model/Budget.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1798#1799#0" expanded="true" />
+                <element signature="e#1831#1832#0" expanded="true" />
+                <element signature="e#1881#1882#0" expanded="true" />
+                <element signature="e#1925#1926#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/repository/BudgetRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/controller/FileController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="87" column="48" selection-start-line="87" selection-start-column="48" selection-end-line="87" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -237,8 +165,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/controller/ItemController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3046">
-              <caret line="178" column="37" selection-start-line="178" selection-start-column="37" selection-end-line="178" selection-end-column="37" />
+            <state relative-caret-position="90">
+              <caret line="392" column="4" selection-start-line="392" selection-start-column="4" selection-end-line="405" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -265,6 +193,9 @@
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/model/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/repository/ConsignmentRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/controller/AuthRestAPIs.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/model/Budget.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/controller/BudgetController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/controller/ConsignmentController.java" />
       </list>
     </option>
@@ -275,10 +206,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="y" value="22" />
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="width" value="1440" />
-    <option name="height" value="810" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -309,6 +239,48 @@
               <item name="prod_digital_mysql_siscof" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringBootJwtAuthentication" type="b2602c69:ProjectViewProjectNode" />
+              <item name="prod_digital_mysql_siscof" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jwtauthentication" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringBootJwtAuthentication" type="b2602c69:ProjectViewProjectNode" />
+              <item name="prod_digital_mysql_siscof" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jwtauthentication" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringBootJwtAuthentication" type="b2602c69:ProjectViewProjectNode" />
+              <item name="prod_digital_mysql_siscof" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jwtauthentication" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringBootJwtAuthentication" type="b2602c69:ProjectViewProjectNode" />
+              <item name="prod_digital_mysql_siscof" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jwtauthentication" type="462c0819:PsiDirectoryNode" />
+              <item name="repository" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringBootJwtAuthentication" type="b2602c69:ProjectViewProjectNode" />
+              <item name="prod_digital_mysql_siscof" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -326,7 +298,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558577959128" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561321490392" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -361,7 +333,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1551407139921</updated>
-      <workItem from="1551407141222" duration="22523000" />
+      <workItem from="1551407141222" duration="28611000" />
     </task>
     <task id="LOCAL-00001" summary="fix for production">
       <created>1551407197535</created>
@@ -398,14 +370,22 @@
       <option name="project" value="LOCAL" />
       <updated>1558475496905</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="fix for production , sweet alert via cdn">
+      <created>1558578003913</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1558578003913</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22523000" />
+    <option name="totallyTimeSpent" value="28611000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1440" height="810" extended-state="0" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Designer" />
       <window_info id="Image Layers" />
@@ -413,18 +393,18 @@
       <window_info id="Favorites" side_tool="true" />
       <window_info id="Capture Tool" />
       <window_info id="Web" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17596567" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28755364" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Spring" />
       <window_info anchor="bottom" id="Terminal" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" weight="0.3286908" />
+      <window_info anchor="bottom" id="Messages" weight="0.32729805" />
       <window_info anchor="bottom" id="Java Enterprise" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3718663" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32168674" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -453,7 +433,8 @@
     <MESSAGE value="fix for production 3" />
     <MESSAGE value="fix for production 4" />
     <MESSAGE value="fix for production 5" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix for production 5" />
+    <MESSAGE value="fix for production , sweet alert via cdn" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix for production , sweet alert via cdn" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/message/request/SignUpForm.java">
@@ -517,13 +498,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/controller/FileController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="87" column="48" selection-start-line="87" selection-start-column="48" selection-end-line="87" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/model/File.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -580,45 +554,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/controller/AuthRestAPIs.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="50" column="10" selection-start-line="50" selection-start-column="10" selection-end-line="50" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/model/Budget.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/controller/BudgetController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-825">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/repository/BudgetRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/repository/FileRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/controller/ItemController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3046">
-          <caret line="178" column="37" selection-start-line="178" selection-start-column="37" selection-end-line="178" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -664,13 +603,62 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/controller/FileController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="87" column="48" selection-start-line="87" selection-start-column="48" selection-end-line="87" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/controller/ItemController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="392" column="4" selection-start-line="392" selection-start-column="4" selection-end-line="405" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/repository/BudgetRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/model/Budget.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1798#1799#0" expanded="true" />
+            <element signature="e#1831#1832#0" expanded="true" />
+            <element signature="e#1881#1882#0" expanded="true" />
+            <element signature="e#1925#1926#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/controller/AuthRestAPIs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="176" column="99" selection-start-line="176" selection-start-column="99" selection-end-line="176" selection-end-column="99" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/controller/BudgetController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="66" column="84" selection-start-line="66" selection-start-column="84" selection-end-line="66" selection-end-column="84" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/controller/ConsignmentController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="194" column="11" selection-start-line="194" selection-start-column="11" selection-end-line="194" selection-end-column="11" />
-          <folding>
-            <element signature="method#deleteConsignments#0;class#ConsignmentController#0" />
-          </folding>
+        <state relative-caret-position="167">
+          <caret line="147" column="30" selection-start-line="147" selection-start-column="30" selection-end-line="147" selection-end-column="30" />
         </state>
       </provider>
     </entry>

@@ -136,24 +136,51 @@ public class ConsignmentController {
     public Consignment updateStatusConsignmentForUPF(@PathVariable Long id,
                                                @PathVariable String status,
                                                @Valid @RequestBody Consignment consignmentUpdated) throws NotFoundException {
-
+        String correo_send = consignmentRepository.findEmailOfCreateConsignment(id);
+        String me = "f.lagos18615@gmail.com";
         return consignmentRepository.findById(id)
                 .map(consignment -> {
 
-                    if(consignment.getStatus()=="Realizando" ){
-                        consignment.setStatus(status);
-                        return consignmentRepository.save(consignment);
+                    if((consignment.getStatus()).compareTo("Realizando")==0){
+                        if(consignment.getStatus()=="Realizando" ){
+                            consignment.setStatus(status);
+                            sendMailFinanzas(correo_send, consignment.getId_consignment());
+                            //sendMailFinanzas(me, consignment.getId_consignment());
+                            return consignmentRepository.save(consignment);
 
+                        }
+                        if(consignment.getStatus()=="Enviada UPF"){
+                            consignment.setStatus(status);
+                            sendMailFinanzas(correo_send, consignment.getId_consignment());
+                            //sendMailFinanzas(me, consignment.getId_consignment());
+                            return consignmentRepository.save(consignment);
+                        }
+                        if(consignment.getStatus()!="Realizando" && consignment.getStatus()!="Enviada UPF" ) {
+                            consignment.setStatus(status);
+                            sendMailFinanzas(correo_send, consignment.getId_consignment());
+                            //sendMailFinanzas(me, consignment.getId_consignment());
+                            return consignmentRepository.save(consignment);
+                            //consignment.setStatus(status);
+                        }
                     }
-                    if(consignment.getStatus()=="Enviada UPF"){
-                        consignment.setStatus(status);
-                        return consignmentRepository.save(consignment);
+                    else{
+                        if(consignment.getStatus()=="Realizando" ){
+                            consignment.setStatus(status);
+                            return consignmentRepository.save(consignment);
+
+                        }
+                        if(consignment.getStatus()=="Enviada UPF"){
+                            consignment.setStatus(status);
+                            return consignmentRepository.save(consignment);
+                        }
+                        if(consignment.getStatus()!="Realizando" && consignment.getStatus()!="Enviada UPF" ) {
+                            consignment.setStatus(status);
+                            return consignmentRepository.save(consignment);
+                            //consignment.setStatus(status);
+                        }
                     }
-                    if(consignment.getStatus()!="Realizando" && consignment.getStatus()!="Enviada UPF" ) {
-                        consignment.setStatus(status);
-                        return consignmentRepository.save(consignment);
-                        //consignment.setStatus(status);
-                    }
+
+
 
                     return consignmentRepository.save(consignment);
                 }).orElseThrow(() -> new NotFoundException("Consignment not found!"));
@@ -200,10 +227,6 @@ public class ConsignmentController {
                     }
 
 
-
-
-
-
                     return consignmentRepository.save(consignment);
                 }).orElseThrow(() -> new NotFoundException("Consignment not found!"));
 
@@ -236,4 +259,23 @@ public class ConsignmentController {
         sender.send(message);
         //return "Mail Sent Success!";
     }
+
+    //metodo para enviar a la unidad de finanzas de la upf que tiene una remesa por revisar
+    public void sendMailFinanzas(String correo, Long num_remesa) {
+        MimeMessage message = sender.createMimeMessage();
+        MimeMessageHelper helper = new MimeMessageHelper(message);
+
+        try {
+            helper.setTo(correo);
+            helper.setText("La remesa nº" + num_remesa + " ha sido enviada para poder revisar, cualquier duda consulte la plataforma web");
+
+            helper.setSubject("La remesa nº "+ num_remesa + ", ha sido enviada para revisar " );
+        } catch (MessagingException e) {
+            e.printStackTrace();
+
+        }
+        sender.send(message);
+
+    }
+
 }

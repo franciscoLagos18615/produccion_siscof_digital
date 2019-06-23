@@ -163,4 +163,22 @@ public class AuthRestAPIs {
 
                 }).orElseThrow(() -> new NotFoundException("user not found with id " + id));
     }
+
+    //metodo que elimina un usuario de la base de datos
+	@DeleteMapping("/User/{username}")
+	public ResponseEntity<?> deleteUser(@PathVariable String username) throws NotFoundException{
+		if(!userRepository.existsByUsername(username)){
+			return new ResponseEntity<>(new ResponseMessage("Fallo -> Uusuario no encontrado!"),
+					HttpStatus.BAD_REQUEST);
+		}
+		return userRepository.findByUsername(username)
+				.map(user->{
+					userRepository.delete(user);
+					return new ResponseEntity<>(new ResponseMessage("Userio eliminado correctamente!"), HttpStatus.OK);
+
+				}).orElseThrow(() -> new NotFoundException("usuario not found!"));
+
+	}
+
+
 }
