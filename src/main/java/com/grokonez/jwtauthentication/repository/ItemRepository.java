@@ -6,6 +6,7 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 
 import javax.transaction.Transactional;
+import java.math.BigDecimal;
 import java.math.BigInteger;
 import java.util.List;
 import java.util.Optional;
@@ -20,6 +21,9 @@ public interface ItemRepository extends JpaRepository<Item, Long>  {
 
     @Query(value= "SELECT SUM(MONEY) FROM items WHERE CONSIGNMENT_ID = ?1" , nativeQuery = true)
     BigInteger findTotalConsignmentById(Long consignmentId);
+
+    @Query(value= "SELECT SUM(MONEY) FROM items WHERE CONSIGNMENT_ID = ?1" , nativeQuery = true)
+    BigDecimal findTotalConsignmentByInBigDecimal(Long consignmentId);
 
     //retornar un item de acuerdo a su id
     @Query(value = "SELECT * FROM items WHERE ITEM_ID= ?1" , nativeQuery = true)

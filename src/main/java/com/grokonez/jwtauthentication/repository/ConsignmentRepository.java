@@ -22,4 +22,6 @@ public interface ConsignmentRepository extends JpaRepository<Consignment, Long> 
     String findEmailOptional(String name);
 
 
+
+
 }

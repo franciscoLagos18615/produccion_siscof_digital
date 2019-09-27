@@ -2,13 +2,15 @@ package com.grokonez.jwtauthentication.controller;
 
 import com.grokonez.jwtauthentication.model.Budget;
 import com.grokonez.jwtauthentication.repository.BudgetRepository;
+import com.grokonez.jwtauthentication.repository.ProjectRepository;
 import javassist.NotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 
-import java.util.Date;
+import java.math.BigDecimal;
+import java.sql.Date;
 import java.util.Optional;
 
 @CrossOrigin(origins = "*", maxAge = 3600)
@@ -18,6 +20,12 @@ public class BudgetController {
 
     @Autowired
     private BudgetRepository budgetRepository;
+
+    @Autowired
+    private ProjectRepository projectRepository;
+
+
+
 
     //metodo que retorna un presupuesto de acuerdo a su id
 
@@ -49,14 +57,71 @@ public class BudgetController {
     public @ResponseBody Iterable<Budget> getAllBudgetsInactive(){return budgetRepository.findAllByInactive();}
 
 
-    //method that return a new budget
-    @RequestMapping(path = "budget/new", method = RequestMethod.POST)
-    public Integer CreateUser(@RequestBody Budget budget) {
+    @GetMapping(path = "budget/budgetFindByIdProject/{projectId}")
+    public @ResponseBody
+    Iterable<Budget> getBudgetByIdProject(@PathVariable Long projectId){
+
+        return budgetRepository.findByIdProject(projectId);
+
+    }
+
+    @GetMapping(path = "budget/budgetByStatusAndMoney")
+    public @ResponseBody
+    Iterable<Budget> getBudgetByStatusAndMoney(){
+
+        return budgetRepository.findByStatusAndMoney();
+
+    }
+
+    @GetMapping(path = "budget/budgetByGovernanceAndMoney/{governance}")
+    public @ResponseBody
+    Iterable<Budget> getBudgetByGovernanceAndMoney(@PathVariable String governance){
+
+        return budgetRepository.findByGovernanceAndMoney(governance);
+
+    }
 
 
-        budgetRepository.save(budget);
-        return 1;
 
+    @PostMapping(value = "/budget/{projectId}/new")
+
+    public Budget createBudget(@PathVariable Long projectId,
+
+                        @Valid @RequestBody Budget budget) throws NotFoundException {
+        return projectRepository.findById(projectId)
+                .map(project -> {
+                    if(!(budget.getStatus_approbation().equals("PENDIENTE")) ){
+                        BigDecimal finalMoney= project.getMoney_final().subtract(budget.getBudget());
+                        project.setMoney_final(finalMoney);
+                    }
+
+                    projectRepository.save(project);
+                    budget.setProject(project);
+
+                    return budgetRepository.save(budget);
+                }).orElseThrow(()-> new NotFoundException("Proyecto no existe!"));
+
+    }
+
+    @PutMapping(value = "/budget/{projectId}/aprobar")
+    public Budget updateBudgetAprobar(@PathVariable Long projectId,
+                               @Valid @RequestBody Budget budgetUpdated) throws NotFoundException {
+
+        return projectRepository.findById(projectId)
+                .map(project -> {
+                    if(budgetUpdated.getStatus_approbation().equals("APROBADO") ){
+                        BigDecimal finalMoney= project.getMoney_final().subtract(budgetUpdated.getBudget());
+                        project.setMoney_final(finalMoney);
+                    }
+
+                    projectRepository.save(project);
+                    Budget bu = budgetRepository.findById2(budgetUpdated.getBudget_id());
+                    bu.setProject(project);
+                    bu.setStatus_approbation(budgetUpdated.getStatus_approbation());
+                    bu.setDateChange(budgetUpdated.getDateChange());
+
+                    return budgetRepository.save(bu);
+                }).orElseThrow(()-> new NotFoundException("Proyecto no existe!"));
 
     }
 

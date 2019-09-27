@@ -2,6 +2,7 @@ package com.grokonez.jwtauthentication.model;
 
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import javax.persistence.*;
@@ -31,11 +32,27 @@ public class Consignment {
 
     private String status_bin;
 
-    @OneToMany(mappedBy = "consignment", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    /**relacion con item*/
+    @OneToMany(mappedBy = "consignment_id", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
 
 
     @JsonBackReference(value="consignment-item")
     private Set<Item> items;
+
+    /*relacion con presupuesto*/
+
+    @ManyToOne(fetch = FetchType.LAZY, optional = false)
+    @JoinColumn(name = "budget_relation_id", nullable = false)
+    @JsonIgnore
+    private Budget budget;
+
+    public Budget getBudget() {
+        return budget;
+    }
+
+    public void setBudget(Budget budget) {
+        this.budget = budget;
+    }
 
     public Set<Item> getItems() {
         return items;
@@ -85,9 +102,6 @@ public class Consignment {
         this.name_user = name_user;
     }
 
-    //public void addItem(Item item){
-      //  this.items.add(item);
-    //}
 
     public String getStatus_bin() {
         return status_bin;

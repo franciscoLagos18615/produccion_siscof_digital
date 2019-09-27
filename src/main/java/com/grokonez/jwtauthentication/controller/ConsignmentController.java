@@ -2,8 +2,11 @@ package com.grokonez.jwtauthentication.controller;
 
 
 
+import com.grokonez.jwtauthentication.model.Budget;
 import com.grokonez.jwtauthentication.model.Consignment;
+import com.grokonez.jwtauthentication.repository.BudgetRepository;
 import com.grokonez.jwtauthentication.repository.ConsignmentRepository;
+import com.grokonez.jwtauthentication.repository.ItemRepository;
 import javassist.NotFoundException;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,6 +19,7 @@ import org.springframework.web.bind.annotation.*;
 import javax.mail.MessagingException;
 import javax.mail.internet.MimeMessage;
 import javax.validation.Valid;
+import java.math.BigDecimal;
 import java.math.BigInteger;
 import java.util.Date;
 import java.util.Optional;
@@ -28,6 +32,12 @@ public class ConsignmentController {
 
     @Autowired
     private ConsignmentRepository consignmentRepository;
+
+    @Autowired
+    private BudgetRepository budgetRepository;
+
+    @Autowired
+    private ItemRepository itemRepository;
 
     @Autowired
     private JavaMailSender sender;
@@ -61,12 +71,28 @@ public class ConsignmentController {
     public @ResponseBody Iterable<Consignment> getAllConsignmentsInactive(){return consignmentRepository.findAllByInactive();}
 
     //method that return a new consignment
+    /*
     @RequestMapping(path = "consignment/new", method = RequestMethod.POST)
     public Integer CreateUser(@RequestBody Consignment consignment) {
 
         consignmentRepository.save(consignment);
         return 1;
 
+
+    }*/
+    //metodo para crear una remesa
+    @PostMapping(value = "/consignment/{budgetId}/new")
+
+    public Consignment createConsignment(@PathVariable Long budgetId,
+
+                               @Valid @RequestBody Consignment consignment) throws NotFoundException {
+        return budgetRepository.findById(budgetId)
+                .map(budget -> {
+
+                    consignment.setBudget(budget);
+
+                    return consignmentRepository.save(consignment);
+                }).orElseThrow(()-> new NotFoundException("Presupuesto no existe!"));
 
     }
 
@@ -200,7 +226,8 @@ public class ConsignmentController {
         String correo_prueba = "f.lagos18615@gmail.com";
         String correo_user = consignmentRepository.findEmailOfCreateConsignment(id);
         String correo_user_optional = consignmentRepository.findEmailOptional(correo_user);
-
+        Budget buUpdate = budgetRepository.findById2(consignmentUpdated.getBudget().getBudget_id());
+        BigDecimal sumTotalRemesa = itemRepository.findTotalConsignmentByInBigDecimal(consignmentUpdated.getId_consignment());
 
 
         return consignmentRepository.findById(id)
@@ -220,9 +247,15 @@ public class ConsignmentController {
 
                     if(estado.compareTo(estado2) == 0){
                         consignment.setStatus(statusDecision);
-                        //String nuevo = consignment.getStatus();
-                        //System.out.printf("el estado es: ", consignment.getStatus() );
-                        return consignmentRepository.save(consignment);
+                        //condicion para descontar de la tabla presupuesto en el campo presupuesto el valor total de la remesa
+                        if( sumTotalRemesa.compareTo(buUpdate.getBudget()) ==-1 || sumTotalRemesa.compareTo(buUpdate.getBudget()) ==0 ){
+                            BigDecimal newBudget= buUpdate.getBudget().subtract(sumTotalRemesa);
+                            buUpdate.setBudget(newBudget);
+                            budgetRepository.save(buUpdate);
+                            return consignmentRepository.save(consignment);
+                        }
+
+                        //
 
                     }
 

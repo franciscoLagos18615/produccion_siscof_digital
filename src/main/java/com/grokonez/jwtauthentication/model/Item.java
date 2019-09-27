@@ -88,13 +88,9 @@ public class Item {
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "consignment_id", nullable = false)
     @JsonIgnore
-    private Consignment consignment;
+    private Consignment consignment_id;
 
 
-    //@OneToOne(fetch = FetchType.LAZY,
-      //      cascade =  CascadeType.ALL,
-        //    mappedBy = "item")
-    //private File file;
     @OneToMany(mappedBy = "item", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
 
     @JsonBackReference(value="item-file")
@@ -108,13 +104,6 @@ public class Item {
         this.files = files;
     }
 
-    public Consignment getConsignment() {
-        return consignment;
-    }
-
-    public void setConsignment(Consignment consignment) {
-        this.consignment = consignment;
-    }
 
     public long getItem_id() {
         return item_id;
@@ -211,6 +200,16 @@ public class Item {
     public void setStatus(String status) {
         this.status = status;
     }
+
+    public Consignment getConsignment() {
+        return consignment_id;
+    }
+
+    public void setConsignment(Consignment consignment_id) {
+        this.consignment_id = consignment_id;
+    }
+
+
 
 
 }

@@ -1,14 +1,16 @@
 package com.grokonez.jwtauthentication.model;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import org.hibernate.validator.cfg.defs.DecimalMaxDef;
-import org.hibernate.validator.internal.constraintvalidators.bv.money.DecimalMaxValidatorForMonetaryAmount;
+
 
 import javax.persistence.*;
 import javax.validation.constraints.DecimalMax;
 import java.math.BigDecimal;
 import java.math.BigInteger;
 import java.sql.Date;
+import java.util.Set;
 
 @Entity
 @Table(name="Budgets")
@@ -33,6 +35,38 @@ public class Budget {
     private String status;
 
     private Date dateChange;
+
+    private String status_approbation;
+
+    private String name;
+
+    /*relacion con proyecto*/
+    @ManyToOne(fetch = FetchType.LAZY, optional = false)
+    @JoinColumn(name = "project_id", nullable = false)
+    @JsonIgnore
+    private Project project_id;
+
+    /*relacion con remesa*/
+    @OneToMany(mappedBy = "budget", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+
+    @JsonBackReference(value="budget-consignment")
+    private Set<Consignment> consignments;
+
+    public Set<Consignment> getConsignments() {
+        return consignments;
+    }
+
+    public void setConsignments(Set<Consignment> consignments) {
+        this.consignments = consignments;
+    }
+
+    public Project getProject() {
+        return project_id;
+    }
+
+    public void setProject(Project project) {
+        this.project_id = project;
+    }
 
 
     public long getBudget_id() {
@@ -89,5 +123,21 @@ public class Budget {
 
     public void setDateChange(Date dateChange) {
         this.dateChange = dateChange;
+    }
+
+    public String getStatus_approbation() {
+        return status_approbation;
+    }
+
+    public void setStatus_approbation(String status_approbation) {
+        this.status_approbation = status_approbation;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }
